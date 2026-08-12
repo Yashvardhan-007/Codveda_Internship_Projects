@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Home | Secure Portal{% endblock %}
+{% block content %}
+<section class="hero">
+    <p class="eyebrow">Codveda Level 3 · Task 5</p>
+    <h1>Secure Django User Portal</h1>
+    <p>
+        A Python/Django application demonstrating authentication,
+        password security, protected pages and role-aware navigation.
+    </p>
+    {% if user.is_authenticated %}
+        <a class="button" href="{% url 'dashboard' %}">Open Dashboard</a>
+    {% else %}
+        <a class="button" href="{% url 'login' %}">Login</a>
+        <a class="button secondary" href="{% url 'signup' %}">Create Account</a>
+    {% endif %}
+</section>
+{% endblock %}

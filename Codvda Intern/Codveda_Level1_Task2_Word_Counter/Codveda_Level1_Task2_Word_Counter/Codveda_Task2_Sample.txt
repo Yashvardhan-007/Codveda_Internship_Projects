@@ -1,0 +1,5 @@
+Python is a powerful and versatile programming language.
+Python is widely used for web development, automation, data analysis, artificial intelligence, and cybersecurity.
+Learning Python helps developers build practical applications and automate repetitive tasks.
+In cybersecurity, Python can be used for network analysis, security automation, log analysis, and threat intelligence.
+This sample file is created for the Codveda Python Development Internship Level 1 Word Counter task.

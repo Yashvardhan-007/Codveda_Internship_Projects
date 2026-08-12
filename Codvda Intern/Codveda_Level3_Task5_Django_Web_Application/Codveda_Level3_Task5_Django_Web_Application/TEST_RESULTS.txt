@@ -1,0 +1,1 @@
+Django was not installed in the packaging environment. Install requirements.txt, then run: python manage.py test

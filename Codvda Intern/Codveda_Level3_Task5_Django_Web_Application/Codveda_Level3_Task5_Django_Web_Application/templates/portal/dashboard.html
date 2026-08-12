@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | Secure Portal{% endblock %}
+{% block content %}
+<section class="card">
+    <p class="eyebrow">Authenticated Area</p>
+    <h1>Welcome, {{ user.username }}</h1>
+    <p>You successfully accessed a login-protected Django view.</p>
+
+    <div class="grid">
+        <div class="stat">
+            <strong>Authentication</strong>
+            <span>Active</span>
+        </div>
+        <div class="stat">
+            <strong>Role</strong>
+            <span>{% if user.is_staff %}Staff/Admin{% else %}Standard User{% endif %}</span>
+        </div>
+        <div class="stat">
+            <strong>Account</strong>
+            <span>{{ user.email|default:"Email not provided" }}</span>
+        </div>
+    </div>
+</section>
+{% endblock %}
