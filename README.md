@@ -13,6 +13,7 @@ A collection of practical Python projects developed during my **Python Developme
 
 The repository documents my progression from Python fundamentals to API integration, web scraping, Django web development, and cybersecurity-focused file encryption.
 
+
 ---
 
 ## 👨‍💻 About the Internship
